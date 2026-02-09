@@ -1,0 +1,118 @@
+/* Layout specific styles */
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.site-header {
+    height: var(--nav-height);
+    /* Remove default border */
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Translucent bg */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+/* Subtle gradient line at bottom */
+.site-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+            rgba(226, 232, 240, 0) 0%,
+            rgba(226, 232, 240, 1) 20%,
+            rgba(226, 232, 240, 1) 80%,
+            rgba(226, 232, 240, 0) 100%);
+}
+
+.header-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo {
+    font-weight: 600;
+    font-size: 1.125rem;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.site-nav {
+    display: flex;
+    gap: 32px;
+    /* Increased gap */
+}
+
+.site-nav a {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    padding: 4px 0;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+    color: var(--text-primary);
+}
+
+/* Animated Underline/Dot */
+.site-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 100%;
+    height: 2px;
+    background: var(--accent-primary);
+    border-radius: 2px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+}
+
+.site-nav a.active::after {
+    transform: translateX(-50%) scaleX(0.6);
+    /* Small dash */
+    opacity: 1;
+}
+
+.site-nav a:hover::after {
+    transform: translateX(-50%) scaleX(1);
+    /* Full underline on hover */
+    opacity: 0.5;
+}
+
+.site-main {
+    flex-grow: 1;
+}
+
+.site-footer {
+    padding: var(--spacing-lg) 0;
+    border-top: 1px solid var(--border-color);
+    margin-top: var(--spacing-xl);
+    text-align: center;
+    /* Centered footer */
+}
+
+.site-footer p {
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+}
