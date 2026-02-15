@@ -7,8 +7,6 @@ const Layout = ({ children }) => {
     const navLinks = [
         { name: 'Home', path: '/' },
         { name: 'Projects', path: '/projects' },
-        // { name: 'About', path: '/about' }, // About is on Home or separate? User asked for About/Thinking section. I'll put it as separate page for clarity or section. User: "5. ABOUT / THINKING SECTION (can be on Home or separate)". I'll make it separate conform to typical portfolio structure, or just scroll? Implementation plan said separate About.jsx.
-        { name: 'Thinking', path: '/thinking' },
         { name: 'Resume', path: '/resume' },
         { name: 'Contact', path: '/contact' },
     ];
