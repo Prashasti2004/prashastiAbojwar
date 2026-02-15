@@ -4,7 +4,7 @@ import AppRoutes from './routes';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/prashastiAbojwar">
       {/* We will implement Layout and AppRoutes shortly */}
       <Layout>
         <AppRoutes />
