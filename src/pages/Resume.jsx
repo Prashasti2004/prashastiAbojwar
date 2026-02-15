@@ -1,7 +1,7 @@
 import './Resume.css';
 import FadeIn from '../components/FadeIn';
 
-import resumePDF from '../assets/Prashasti_resume.pdf';
+import resumePDF from '../assets/Prashasti_Resume.pdf';
 
 const Resume = () => {
     return (
@@ -24,28 +24,31 @@ const Resume = () => {
 
                             <div className="resume-item">
                                 <div className="resume-item-header">
-                                    <h3>Software Developer</h3>
-                                    <span>Jun - Jul 2024</span>
+                                    <h3>Software Dev</h3>
+                                    <span>Jun - Present</span>
                                 </div>
-                                <p className="company-name">Sensorama Technologies</p>
+                                <p className="company-name">Geminus Tech (Client: Toshiba)</p>
                                 <ul>
-                                    <li>Developed UI with data QA for a stand-alone software HPLC system using ESP32 & touch screen display</li>
-                                    <li>Enhanced UI using Squareline studio GUI using LVGL and TFT_eSPI libraries in Arduino C language</li>
-                                    <li>Implemented SD card for storing and accessing multiple user profiles, improved user experience by 35%</li>
-                                    <li>Awarded LOR for commendable contribution in developing enhanced touch user Interface of HPLC System</li>
+                                    <li>Working on the frontend firmware layer for NVMe-based SSD drives deployed in production environments</li>
+                                    <li>Analyzed firmware logs to diagnose post-launch SSD failures impacting enterprise customer deployments</li>
+                                    <li>Implemented root-cause debugging workflows, significantly improving turnaround time for critical issues</li>
+                                    <li>Identified NVMe protocol bottlenecks affecting drive stability, reducing recurring performance escalations</li>
+                                    <li><strong>Impact:</strong> Reduced recurring firmware issue turnaround time by 25%, strengthening pre-release validation</li>
                                 </ul>
                             </div>
 
                             <div className="resume-item">
                                 <div className="resume-item-header">
-                                    <h3>Data Analyst</h3>
-                                    <span>Jul 2024</span>
+                                    <h3>Software Dev</h3>
+                                    <span>Jun - Jul 2024</span>
                                 </div>
-                                <p className="company-name">NullClass Edtech</p>
+                                <p className="company-name">Sensorama Technologies</p>
                                 <ul>
-                                    <li>Reduced search time by 25%, developing precise job search solutions using 30+ Tableau charts & filters</li>
-                                    <li>Optimized 1.6M data analysis using NumPy and Pandas, streamlining data visualization with dashboards</li>
-                                    <li>Awarded LOR for commendable contribution to build Real-time Job Analytic Portal for optimized search</li>
+                                    <li>Awarded Letter of Recommendation for delivering production-ready, impact-driven system improvements</li>
+                                    <li>Designed and optimized touch-based interface for HPLC hardware system, enhancing operational usability</li>
+                                    <li>Re-architected UI workflows to improve navigation clarity and reduce user interaction friction</li>
+                                    <li>Implemented multi-profile storage system enabling personalized configurations and workflow flexibility</li>
+                                    <li><strong>Impact:</strong> Improved overall device usability by 35%, accelerating adoption across end users</li>
                                 </ul>
                             </div>
                         </section>
@@ -54,33 +57,18 @@ const Resume = () => {
                     {/* Technical Projects */}
                     <FadeIn delay={0.2}>
                         <section className="resume-section">
-                            <h2>Technical Projects</h2>
+                            <h2>Key Projects</h2>
 
                             <div className="resume-item">
                                 <div className="resume-item-header">
-                                    <h3>Image Classifiers</h3>
-                                    <span>2024</span>
-                                </div>
-                                <p className="company-name">Guide: Prof. Biplab Banerjee</p>
-                                <ul>
-                                    <li>Leveraged advanced CNN architectures to credibly enhance & improve image classification accuracy</li>
-                                    <li>Resulted in 12% and 19% accuracy gains, refining CIFAR-100 classification using ResNet-18 & DenseNet</li>
-                                    <li>Increased classification accuracy by 27% with EfficientNet B7 integrated ViT and multi-head attention</li>
-                                    <li>Achieved enhanced accuracy of 98.5% in classifying multiple satellite images using CNN architectures</li>
-                                    <li>Increased accuracy by 1.5-2% using 12+ dropping methods: Dropout, Spatial-Drop, mainly Drop-Block</li>
-                                </ul>
-                            </div>
-
-                            <div className="resume-item">
-                                <div className="resume-item-header">
-                                    <h3>Founder's Office Shadow Project - Quick-Commerce</h3>
+                                    <h3>Founder's Office Shadow Project | Quick-Commerce</h3>
                                     <span>2026</span>
                                 </div>
                                 <ul>
-                                    <li>Simulated end-to-end Founder's Office ownership for a high-burn, high-velocity quick-commerce startup</li>
-                                    <li>Diagnosed unit economics, burn drivers and city-level execution bottlenecks across dark-store operations</li>
-                                    <li>Authored decision memos with explicit trade-offs and designed SOP, KPIs and CEO-level reporting systems</li>
-                                    <li>Delivered a 30-60-90 day execution roadmap aligned to measurable business outcomes with ownership</li>
+                                    <li>Simulated end-to-end Founder's Office ownership for a high-burn, multi-city quick-commerce startup</li>
+                                    <li>Diagnosed unit economics of 8 dark stores, identifying 18% burn inefficiencies & city-level execution gaps</li>
+                                    <li>Authored decision memos outlining trade-offs and built KPI dashboards for weekly CEO reviews</li>
+                                    <li>Delivered a 30-60-90 day roadmap projecting 12-15% cost optimization and improved store-level CM</li>
                                 </ul>
                             </div>
 
@@ -90,24 +78,36 @@ const Resume = () => {
                                     <span>2026</span>
                                 </div>
                                 <ul>
-                                    <li>Built an AI-powered internal tool focused on reducing executive decision fatigue, not just automation</li>
-                                    <li>Converted raw ops updates and metrics into founder-ready weekly summaries and priority briefs</li>
-                                    <li>Designed prioritization and risk-flagging logic to surface critical issues requiring immediate attention</li>
-                                    <li>Reduced manual reporting effort while improving speed, clarity and quality of executive decision-making</li>
+                                    <li>Built an AI-powered executive agent using <strong>n8n</strong> to reduce decision fatigue and reporting overload</li>
+                                    <li>Converted raw operational metrics into weekly executive summaries and briefs</li>
+                                    <li>Designed risk-scoring & prioritization logic to flag high-impact issues</li>
+                                    <li><strong>Impact:</strong> Reduced manual reporting effort by 60% and improved decision turnaround speed by 35%</li>
                                 </ul>
                             </div>
 
                             <div className="resume-item">
                                 <div className="resume-item-header">
-                                    <h3>Startup Efficiency Audit</h3>
+                                    <h3>Startup Efficiency Audit | Self-Project</h3>
                                     <span>2026</span>
                                 </div>
-                                <p className="company-name">Self-Project</p>
                                 <ul>
-                                    <li>Conducted a data-driven internal audit to identify hidden operational and cost inefficiencies</li>
-                                    <li>Modeled burn, cost allocation, and output per function for a Zepto-like quick-commerce operating model</li>
-                                    <li>Identified highest-impact operational and cost leaks through structured, metrics-back root-cause analysis</li>
-                                    <li>Proposed execution-ready fixes across process redesign, adjustments and targeted automation initiatives</li>
+                                    <li>Conducted structured operational audit to improve unit economics (fleet, inventory, support)</li>
+                                    <li>Modeled cost leakages, identifying 15-56% efficiency improvements</li>
+                                    <li>Designed dynamic batching, markdown pricing, and AI refund validation (+11pt margins)</li>
+                                    <li>Built a KPI and ownership framework shifting from founder-centric to scalable, city-level accountability</li>
+                                </ul>
+                            </div>
+
+                            <div className="resume-item">
+                                <div className="resume-item-header">
+                                    <h3>Image Classifiers</h3>
+                                    <span>2024</span>
+                                </div>
+                                <p className="company-name">Guide: Prof. Biplab Banerjee</p>
+                                <ul>
+                                    <li>Conducted deep learning experimentation to optimize image classification performance</li>
+                                    <li>Benchmarked CNN architectures, improving classification accuracy by up to 27%</li>
+                                    <li>Achieved <strong>98.5% satellite image classification accuracy</strong> through architecture optimization</li>
                                 </ul>
                             </div>
                         </section>
@@ -124,22 +124,23 @@ const Resume = () => {
                                     <span>2022 - 2024</span>
                                 </div>
                                 <p className="company-name">Media Head (2023-2024) | Web Secretary (2022-2023)</p>
-                                <div className="leadership-subsection">
-                                    <h4>Leadership</h4>
-                                    <ul>
-                                        <li>Spearheaded 30+ member 3-tier council | Decorated with Cadet under Officer rank, 2nd highest rank NCC</li>
-                                        <li>Led 70+ cadets as Company Captain, securing First position in overall Championship</li>
-                                        <li>Appointed Contingent Commander, leading 70+ cadets on 74th Republic Day Parade</li>
-                                    </ul>
+                                <ul>
+                                    <li>Spearheaded 30+ member 3-tier council; decorated with <strong>Cadet under Officer</strong> rank (2nd highest)</li>
+                                    <li>Led 70+ cadets as Company Captain (First position in overall Championship) and Contingent Commander for the 74th Republic Day Parade</li>
+                                    <li>Organized 20+ events and Annual Training Camp-410 impacting 500+ cadets</li>
+                                    <li>Initiated Media Championship and added "Book of Record" & FAQ page, increasing visitors by 50%</li>
+                                </ul>
+                            </div>
+
+                            <div className="resume-item">
+                                <div className="resume-item-header">
+                                    <h3>Indian Games Kabaddi Captain</h3>
+                                    <span>2022 - 2024</span>
                                 </div>
-                                <div className="leadership-subsection">
-                                    <h4>Management</h4>
-                                    <ul>
-                                        <li>Organized 20+ events & Annual Training Camp-410 impacting 500+ cadets and institute</li>
-                                        <li>Initiated Media Championship with 5+ genres and workshops for broad exposure</li>
-                                        <li>Added Book of Record & FAQ page, increasing visitors by 50% & boosting engagement</li>
-                                    </ul>
-                                </div>
+                                <ul>
+                                    <li>Pioneered the first-ever girls' kabaddi team at IIT Bombay, securing silver at Avhan Sports Fest</li>
+                                    <li>Achieved 1st runner-up position at <strong>Udghosh</strong>, India's largest college sports fest</li>
+                                </ul>
                             </div>
                         </section>
                     </FadeIn>
@@ -151,7 +152,7 @@ const Resume = () => {
                             <div className="skills-grid">
                                 <div>
                                     <h3>Strategy & Operations</h3>
-                                    <p>Problem Structuring, KPIs, SOPs</p>
+                                    <p>Problem structuring, KPIs, SOPs</p>
                                 </div>
                                 <div>
                                     <h3>Tech Stack</h3>
@@ -163,7 +164,7 @@ const Resume = () => {
                                 </div>
                                 <div>
                                     <h3>Miscellaneous</h3>
-                                    <p>High-Ownership Execution</p>
+                                    <p>n8n, Antigravity, Notion, OpenAI</p>
                                 </div>
                             </div>
                         </section>
@@ -179,18 +180,8 @@ const Resume = () => {
                                     <h3>Scholastic Achievements</h3>
                                 </div>
                                 <ul>
-                                    <li>Achieved 99.27 percentile in MHT CET 2021 – PCM out of over 0.19 million candidates nationwide</li>
-                                    <li>Earned 3 specialist badges from Coding Ninjas in Array, LinkedList and BST for problem-solving skills</li>
-                                </ul>
-                            </div>
-
-                            <div className="resume-item">
-                                <div className="resume-item-header">
-                                    <h3>Sports</h3>
-                                </div>
-                                <ul>
-                                    <li>Captain of 1st Girls Kabaddi Team at IIT Bombay</li>
-                                    <li>1st Runner up position Udghosh & Avhaan kabaddi</li>
+                                    <li>Achieved <strong>99.27 percentile</strong> in MHT CET 2021 (PCM) out of over 0.19 million candidates nationwide</li>
+                                    <li>B.Tech in Aerospace Engineering, IIT Bombay (2021-2025)</li>
                                 </ul>
                             </div>
 
@@ -209,10 +200,9 @@ const Resume = () => {
                                     <h3>Cultural & Social</h3>
                                 </div>
                                 <ul>
-                                    <li>Special Mention as Cult Person of the year at NCC</li>
-                                    <li>Silver in lifestyle General Championship in NCC</li>
+                                    <li>Special Mention as <strong>Cult Person of the Year</strong> at NCC; Silver in lifestyle General Championship</li>
                                     <li>Mentored 200+ students at Navodaya Vidyalaya</li>
-                                    <li>Led 30+ team turn 1000+ plastic bottle into ecobricks</li>
+                                    <li>Led 30+ team to create 1000+ plastic bottle ecobricks</li>
                                 </ul>
                             </div>
                         </section>

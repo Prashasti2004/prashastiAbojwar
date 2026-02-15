@@ -88,13 +88,22 @@
     transition: opacity 0.3s ease;
 }
 
-.kpi-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+.kpi-card.interactive {
+    cursor: pointer;
 }
 
-.kpi-card:hover::before {
+.kpi-card.interactive:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: #3b82f6;
+}
+
+.kpi-card.interactive:hover::before {
     opacity: 1;
+}
+
+.kpi-card.interactive:active {
+    transform: translateY(-2px);
 }
 
 .kpi-icon {
@@ -168,6 +177,21 @@
     color: #059669;
 }
 
+/* Audit Groups */
+.audit-group {
+    margin-bottom: var(--spacing-xxl);
+    border-top: 2px solid var(--border-color);
+    padding-top: var(--spacing-xl);
+}
+
+.group-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-lg);
+    letter-spacing: -0.02em;
+}
+
 /* Audit Sections */
 .audit-section {
     margin-bottom: var(--spacing-xl);
@@ -175,6 +199,7 @@
     background: #fafbfc;
     border-radius: 16px;
     border: 1px solid var(--border-color);
+    scroll-margin-top: 100px;
 }
 
 .audit-section.alt {
@@ -310,6 +335,8 @@
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    height: 100%;
+    justify-content: flex-end;
 }
 
 .bar {

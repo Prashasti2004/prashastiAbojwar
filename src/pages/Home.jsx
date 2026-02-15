@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import FadeIn from '../components/FadeIn';
 import ProjectCard from '../components/ProjectCard';
 import profileImage from '../assets/profile.png';
-import resumePDF from '../assets/Prashasti_resume.pdf';
+import resumePDF from '../assets/Prashasti_Resume.pdf';
 
 const Home = () => {
     const featuredProjects = [
@@ -12,16 +12,16 @@ const Home = () => {
             title: "Founder's Office Shadow Project",
             description: 'Simulated executive execution: Priority management, decision memos, & operating cadence.',
             type: 'Operations',
-            impact: '30% fewer ad-hoc meetings',
+            impact: '18% burn reduction',
             icon: '🎯',
             link: '/projects#shadow-project'
         },
         {
             id: 'zepto-ceo-ai',
             title: 'CEO Cognitive Load Reduction',
-            description: 'Compressing 50+ operational metrics into 5 founder-level insights.',
+            description: 'Compressing 50+ operational metrics into founder-level insights using n8n.',
             type: 'AI System',
-            impact: 'View Project →',
+            impact: '60% less reporting effort',
             icon: '🧠',
             link: '/projects/zepto-ceo-ai'
         },
@@ -30,39 +30,14 @@ const Home = () => {
             title: 'Efficiency Audit + KPI Dashboard',
             description: 'End-to-end business audit identifying bottlenecks + live KPI dashboard implementation.',
             type: 'Analytics',
-            impact: 'View Full Case Study →',
+            impact: '15-56% efficiency gains',
             icon: '📊',
             link: '/zepto-audit'
         }
     ];
 
-    const focusAreas = [
-        {
-            icon: '👔',
-            title: 'Chief of Staff Level Execution',
-            description: 'Strategic planning & cross-functional coordination'
-        },
-        {
-            icon: '🚀',
-            title: '0 to 1 Technical Launches',
-            description: 'Product development & go-to-market execution'
-        },
-        {
-            icon: '⚙️',
-            title: 'Operational Systems Design',
-            description: 'Process optimization & workflow automation'
-        },
-        {
-            icon: '📈',
-            title: 'Data & Metrics Infrastructure',
-            description: 'Analytics dashboards & KPI tracking systems'
-        }
-    ];
-
     const stats = [
-        { label: 'IIT Bombay', value: '🎓' },
-        { label: 'NCC Leader', value: '⭐' },
-        { label: '99.27%ile', value: '📊' }
+        { label: 'Education: B.Tech IIT Bombay', value: '🎓' }
     ];
 
     return (
@@ -127,26 +102,6 @@ const Home = () => {
                                 </div>
                             </FadeIn>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* What I Do Section */}
-            <section className="section-padding what-i-do-section bg-surface-subtle">
-                <div className="container">
-                    <FadeIn>
-                        <h3 className="section-title">Focus Areas</h3>
-                    </FadeIn>
-                    <div className="focus-areas-grid">
-                        {focusAreas.map((area, i) => (
-                            <FadeIn key={i} delay={0.1 + i * 0.05}>
-                                <div className="focus-area-card">
-                                    <div className="focus-icon">{area.icon}</div>
-                                    <h4 className="focus-title">{area.title}</h4>
-                                    <p className="focus-description">{area.description}</p>
-                                </div>
-                            </FadeIn>
-                        ))}
                     </div>
                 </div>
             </section>

@@ -7,7 +7,7 @@ const Contact = () => {
 
     const handleEmailClick = async (e) => {
         e.preventDefault();
-        const email = 'prashastiabojwar@gmail.com';
+        const email = 'prabojwasti@gmail.com';
 
         try {
             await navigator.clipboard.writeText(email);
@@ -36,7 +36,7 @@ const Contact = () => {
                         <div className="contact-links">
                             <a href="https://www.linkedin.com/in/prashastiabojwar" target="_blank" rel="noopener noreferrer" className="contact-link">LinkedIn</a>
                             <a href="#" onClick={handleEmailClick} className="contact-link email-copy">
-                                {copied ? 'Copied!' : 'prashastiabojwar@gmail.com'}
+                                {copied ? 'Copied!' : 'prabojwasti@gmail.com'}
                             </a>
                         </div>
                     </FadeIn>
