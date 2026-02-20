@@ -25,7 +25,7 @@ const ZeptoAI = () => {
                             An end-to-end autonomous AI pipeline that monitors business signals daily, detects strategic deltas, performs LLM-driven analysis, and generates board-level executive decision briefs — fully automated, zero human intervention required.
                         </p>
                         <div className="ai-meta-row">
-                            <span className="ai-meta-item">⚡ Antigravity Automation</span>
+                            <span className="ai-meta-item">⚡ n8n Automation</span>
                             <span className="ai-meta-divider">·</span>
                             <span className="ai-meta-item">🧠 OpenAI GPT-4</span>
                             <span className="ai-meta-divider">·</span>
@@ -204,7 +204,7 @@ const ZeptoAI = () => {
                         <div className="tech-stack-grid">
                             <div className="tech-stack-item">
                                 <div className="tech-stack-category">Automation Platform</div>
-                                <div className="tech-stack-badge automation">⚡ Antigravity</div>
+                                <div className="tech-stack-badge automation">⚡ n8n</div>
                             </div>
                             <div className="tech-stack-item">
                                 <div className="tech-stack-category">Language Model</div>
@@ -477,7 +477,7 @@ const ZeptoAI = () => {
                                 <div className="arch-sched-items">
                                     <div className="arch-sched-node">⏰ Daily Cron</div>
                                     <div className="arch-sched-node">📅 Weekly Cron</div>
-                                    <div className="arch-sched-node">⚡ Antigravity Engine</div>
+                                    <div className="arch-sched-node">⚡ n8n Engine</div>
                                 </div>
                             </div>
                         </div>
