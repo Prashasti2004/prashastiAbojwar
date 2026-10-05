@@ -9,14 +9,36 @@ const Resume = () => {
             <div className="container">
                 <FadeIn>
                     <div className="resume-header">
-                        <h1 className="page-title">Resume</h1>
+                        <div>
+                            <h1 className="page-title">Resume</h1>
+                            <p className="resume-subtitle">Founder’s Office | Strategy | Execution | Systems</p>
+                        </div>
                         <a href={resumePDF} download="Prashasti_Resume.pdf" className="button-primary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '6px' }}>
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
                             Download PDF
                         </a>
                     </div>
                 </FadeIn>
 
                 <div className="resume-paper">
+                    {/* Education */}
+                    <FadeIn delay={0.05}>
+                        <section className="resume-section">
+                            <h2>Education</h2>
+                            <div className="resume-item education-item">
+                                <div className="resume-item-header">
+                                    <h3>Bachelor of Technology (B.Tech) - Aerospace Engineering</h3>
+                                    <span>2021 - 2025</span>
+                                </div>
+                                <p className="company-name">Indian Institute of Technology Bombay (IIT Bombay)</p>
+                            </div>
+                        </section>
+                    </FadeIn>
+
                     {/* Professional Experience */}
                     <FadeIn delay={0.1}>
                         <section className="resume-section">
@@ -24,16 +46,34 @@ const Resume = () => {
 
                             <div className="resume-item">
                                 <div className="resume-item-header">
+                                    <h3>Product Management</h3>
+                                    <span>Jul 2026 - Present</span>
+                                </div>
+                                <p className="company-name">Epifi (Tetriz)</p>
+                                <ul>
+                                    <li>Built GTM automation for outbound pipeline (Sales Nav → Apollo → HubSpot) on 6.2K+ ICP leads</li>
+                                    <li>Owned 0→1 social media strategy on Instagram, YouTube & TikTok for organic brand growth</li>
+                                    <li>Set up & scaled AI content engine turning daily trend signals into fact-checked blog & LinkedIn posts</li>
+                                    <li className="resume-impact">
+                                        <strong>Impact:</strong> 35K+ organic views on a single reel; ~5x outbound reply rate (0.2% → 1.2%) in a month
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div className="resume-item">
+                                <div className="resume-item-header">
                                     <h3>Software Dev</h3>
-                                    <span>Jun - Present</span>
+                                    <span>Jun 2025 - Jul 2026</span>
                                 </div>
                                 <p className="company-name">Geminus Tech (Client: Toshiba)</p>
                                 <ul>
-                                    <li>Working on the frontend firmware layer for NVMe-based SSD drives deployed in production environments</li>
+                                    <li>Working on frontend firmware layer for NVMe-based SSD drives deployed in production environments</li>
                                     <li>Analyzed firmware logs to diagnose post-launch SSD failures impacting enterprise customer deployments</li>
                                     <li>Implemented root-cause debugging workflows, significantly improving turnaround time for critical issues</li>
-                                    <li>Identified NVMe protocol bottlenecks affecting drive stability, reducing recurring performance escalations</li>
-                                    <li><strong>Impact:</strong> Reduced recurring firmware issue turnaround time by 25%, strengthening pre-release validation</li>
+                                    <li>Identify NVMe protocol bottlenecks affecting drive stability, reducing recurring performance escalations</li>
+                                    <li className="resume-impact">
+                                        <strong>Impact:</strong> Reduced recurring firmware issue turnaround time by 25%, strengthening pre-release validation
+                                    </li>
                                 </ul>
                             </div>
 
@@ -43,18 +83,20 @@ const Resume = () => {
                                     <span>Jun - Jul 2024</span>
                                 </div>
                                 <p className="company-name">Sensorama Technologies</p>
+                                <p className="item-tagline">Awarded Letter of Recommendation for delivering production-ready, impact-driven system improvements</p>
                                 <ul>
-                                    <li>Awarded Letter of Recommendation for delivering production-ready, impact-driven system improvements</li>
                                     <li>Designed and optimized touch-based interface for HPLC hardware system, enhancing operational usability</li>
                                     <li>Re-architected UI workflows to improve navigation clarity and reduce user interaction friction</li>
                                     <li>Implemented multi-profile storage system enabling personalized configurations and workflow flexibility</li>
-                                    <li><strong>Impact:</strong> Improved overall device usability by 35%, accelerating adoption across end users</li>
+                                    <li className="resume-impact">
+                                        <strong>Impact:</strong> Improved overall device usability by 35%, accelerating adoption across end users
+                                    </li>
                                 </ul>
                             </div>
                         </section>
                     </FadeIn>
 
-                    {/* Technical Projects */}
+                    {/* Key Projects */}
                     <FadeIn delay={0.2}>
                         <section className="resume-section">
                             <h2>Key Projects</h2>
@@ -64,11 +106,11 @@ const Resume = () => {
                                     <h3>Founder's Office Shadow Project | Quick-Commerce</h3>
                                     <span>2026</span>
                                 </div>
+                                <p className="item-tagline">Simulated end-to-end Founder's Office ownership for a high-burn, multi-city quick-commerce startup</p>
                                 <ul>
-                                    <li>Simulated end-to-end Founder's Office ownership for a high-burn, multi-city quick-commerce startup</li>
                                     <li>Diagnosed unit economics of 8 dark stores, identifying 18% burn inefficiencies & city-level execution gaps</li>
-                                    <li>Authored decision memos outlining trade-offs and built KPI dashboards for weekly CEO reviews</li>
-                                    <li>Delivered a 30-60-90 day roadmap projecting 12-15% cost optimization and improved store-level CM</li>
+                                    <li>Authored decision memos outlining trade-offs, SOPs & built KPI dashboards for weekly CEO reviews</li>
+                                    <li>Delivered a 30-60-90 day roadmap projecting 12–15% cost optimization & improved store-level CM</li>
                                 </ul>
                             </div>
 
@@ -77,11 +119,13 @@ const Resume = () => {
                                     <h3>AI System to Reduce CEO Cognitive Load</h3>
                                     <span>2026</span>
                                 </div>
+                                <p className="item-tagline">Built an AI-powered executive agent using n8n to reduce decision fatigue and reporting overload</p>
                                 <ul>
-                                    <li>Built an AI-powered executive agent using <strong>n8n</strong> to reduce decision fatigue and reporting overload</li>
-                                    <li>Converted raw operational metrics into weekly executive summaries and briefs</li>
-                                    <li>Designed risk-scoring & prioritization logic to flag high-impact issues</li>
-                                    <li><strong>Impact:</strong> Reduced manual reporting effort by 60% and improved decision turnaround speed by 35%</li>
+                                    <li>Converted raw operational metrics across 5+ functions into weekly executive summaries and briefs</li>
+                                    <li>Designed risk-scoring & prioritization logic to flag high-impact issues requiring immediate attention</li>
+                                    <li className="resume-impact">
+                                        <strong>Impact:</strong> Reduced manual reporting effort by 60% while improving decision turnaround speed by 35%
+                                    </li>
                                 </ul>
                             </div>
 
@@ -90,11 +134,11 @@ const Resume = () => {
                                     <h3>Startup Efficiency Audit | Self-Project</h3>
                                     <span>2026</span>
                                 </div>
+                                <p className="item-tagline">Conducted structured operational audit to improve unit economics with fleet, inventory & support functions</p>
                                 <ul>
-                                    <li>Conducted structured operational audit to improve unit economics (fleet, inventory, support)</li>
-                                    <li>Modeled cost leakages, identifying 15-56% efficiency improvements</li>
-                                    <li>Designed dynamic batching, markdown pricing, and AI refund validation (+11pt margins)</li>
-                                    <li>Built a KPI and ownership framework shifting from founder-centric to scalable, city-level accountability</li>
+                                    <li>Modeled cost leakages across delivery, perishables & refunds, identifying 15–56% efficiency improvement</li>
+                                    <li>Designed dynamic batching, markdown pricing & AI refund validation with risk-tier scoring +11pt margins</li>
+                                    <li>Built KPI and ownership framework shifting from founder-centric to scalable, city-level accountability</li>
                                 </ul>
                             </div>
 
@@ -104,10 +148,13 @@ const Resume = () => {
                                     <span>2024</span>
                                 </div>
                                 <p className="company-name">Guide: Prof. Biplab Banerjee</p>
+                                <p className="item-tagline">Conducted structured deep learning experimentation to optimize image classification model performance</p>
                                 <ul>
-                                    <li>Conducted deep learning experimentation to optimize image classification performance</li>
-                                    <li>Benchmarked CNN architectures, improving classification accuracy by up to 27%</li>
-                                    <li>Achieved <strong>98.5% satellite image classification accuracy</strong> through architecture optimization</li>
+                                    <li>Benchmarked multiple CNN and hybrid architectures, improving classification accuracy by up to 27%</li>
+                                    <li>Applied systematic regularization and model tuning techniques to enhance generalization</li>
+                                    <li className="resume-impact">
+                                        <strong>Impact:</strong> Achieved 98.5% satellite image classification accuracy through architecture optimization and experiments
+                                    </li>
                                 </ul>
                             </div>
                         </section>
@@ -124,12 +171,25 @@ const Resume = () => {
                                     <span>2022 - 2024</span>
                                 </div>
                                 <p className="company-name">Media Head (2023-2024) | Web Secretary (2022-2023)</p>
-                                <ul>
-                                    <li>Spearheaded 30+ member 3-tier council; decorated with <strong>Cadet under Officer</strong> rank (2nd highest)</li>
-                                    <li>Led 70+ cadets as Company Captain (First position in overall Championship) and Contingent Commander for the 74th Republic Day Parade</li>
-                                    <li>Organized 20+ events and Annual Training Camp-410 impacting 500+ cadets</li>
-                                    <li>Initiated Media Championship and added "Book of Record" & FAQ page, increasing visitors by 50%</li>
-                                </ul>
+                                <p className="item-tagline">Spearheaded 30+ member 3-tier council | Decorated with Cadet under Officer rank, 2nd highest rank NCC</p>
+                                
+                                <div className="leadership-subsections">
+                                    <div className="leadership-subsection">
+                                        <h4>Leadership</h4>
+                                        <ul>
+                                            <li>Led 70+ cadets as Company Captain, securing First position in overall Championship</li>
+                                            <li>Appointed Contingent Commander, leading 70+ cadets on 74th Republic Day Parade</li>
+                                        </ul>
+                                    </div>
+                                    <div className="leadership-subsection">
+                                        <h4>Management</h4>
+                                        <ul>
+                                            <li>Organized 20+ events & Annual Training Camp-410 impacting 500+ cadets and institute</li>
+                                            <li>Initiated Media Championship with 5+ genres and workshops for broad exposure</li>
+                                            <li>Added Book of Record & FAQ page, increasing visitors by 50% & boosting engagement</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
 
                             <div className="resume-item">
@@ -137,73 +197,67 @@ const Resume = () => {
                                     <h3>Indian Games Kabaddi Captain</h3>
                                     <span>2022 - 2024</span>
                                 </div>
+                                <p className="item-tagline">Coordinated with Indian Games Secy for team management, ensuring logistics, training and participation</p>
                                 <ul>
-                                    <li>Pioneered the first-ever girls' kabaddi team at IIT Bombay, securing silver at Avhan Sports Fest</li>
-                                    <li>Achieved 1st runner-up position at <strong>Udghosh</strong>, India's largest college sports fest</li>
+                                    <li>Pioneered first-ever girls kabaddi team at IIT Bombay, securing silver at Avhan, IIT Bombay’s Sports Fest</li>
+                                    <li>Achieved 1st runner-up position at Udghosh, India’s largest college sports fest with team collaboration</li>
                                 </ul>
-                            </div>
-                        </section>
-                    </FadeIn>
-
-                    {/* Skills */}
-                    <FadeIn delay={0.4}>
-                        <section className="resume-section">
-                            <h2>Skills</h2>
-                            <div className="skills-grid">
-                                <div>
-                                    <h3>Strategy & Operations</h3>
-                                    <p>Problem structuring, KPIs, SOPs</p>
-                                </div>
-                                <div>
-                                    <h3>Tech Stack</h3>
-                                    <p>C, C++, SQL, Python, React, Node, Next.js</p>
-                                </div>
-                                <div>
-                                    <h3>Software</h3>
-                                    <p>Microsoft Office, Tableau, PowerBI</p>
-                                </div>
-                                <div>
-                                    <h3>Miscellaneous</h3>
-                                    <p>n8n, Antigravity, Notion, OpenAI</p>
-                                </div>
                             </div>
                         </section>
                     </FadeIn>
 
                     {/* Accolades & Extra Curriculars */}
-                    <FadeIn delay={0.5}>
+                    <FadeIn delay={0.4}>
                         <section className="resume-section">
                             <h2>Accolades & Extra Curriculars</h2>
 
-                            <div className="resume-item">
-                                <div className="resume-item-header">
-                                    <h3>Scholastic Achievements</h3>
+                            <div className="accolades-grid">
+                                <div className="accolade-card">
+                                    <h3>Scholastic</h3>
+                                    <p>Achieved <strong>99.27 percentile</strong> in MHT CET 2021 – PCM out of over 0.19 million candidates nationwide</p>
                                 </div>
-                                <ul>
-                                    <li>Achieved <strong>99.27 percentile</strong> in MHT CET 2021 (PCM) out of over 0.19 million candidates nationwide</li>
-                                    <li>B.Tech in Aerospace Engineering, IIT Bombay (2021-2025)</li>
-                                </ul>
-                            </div>
 
-                            <div className="resume-item">
-                                <div className="resume-item-header">
-                                    <h3>NCC Achievements</h3>
+                                <div className="accolade-card">
+                                    <h3>Skills</h3>
+                                    <div className="skills-badge-list">
+                                        <div className="skill-group">
+                                            <span className="skill-label">Strategy & Ops:</span> unit economics | KPIs | SOPs
+                                        </div>
+                                        <div className="skill-group">
+                                            <span className="skill-label">GTM:</span> outbound | lead gen | ICP | CRM | SEO/AEO
+                                        </div>
+                                        <div className="skill-group">
+                                            <span className="skill-label">Tech:</span> C | C++ | SQL | python | React | Node | Next
+                                        </div>
+                                        <div className="skill-group">
+                                            <span className="skill-label">AI & Tools:</span> n8n | Claude | HubSpot | Apollo
+                                        </div>
+                                    </div>
                                 </div>
-                                <ul>
-                                    <li>Attained 'A' grade in the B and C certificate exam</li>
-                                    <li>Performed Guard of Honour for all 3 retired chiefs</li>
-                                </ul>
-                            </div>
 
-                            <div className="resume-item">
-                                <div className="resume-item-header">
-                                    <h3>Cultural & Social</h3>
+                                <div className="accolade-card">
+                                    <h3>NCC</h3>
+                                    <ul>
+                                        <li>Attained ‘A’ grade in the B and C certificate exam</li>
+                                        <li>Performed Guard of Honour for all 3 retired chiefs</li>
+                                    </ul>
                                 </div>
-                                <ul>
-                                    <li>Special Mention as <strong>Cult Person of the Year</strong> at NCC; Silver in lifestyle General Championship</li>
-                                    <li>Mentored 200+ students at Navodaya Vidyalaya</li>
-                                    <li>Led 30+ team to create 1000+ plastic bottle ecobricks</li>
-                                </ul>
+
+                                <div className="accolade-card">
+                                    <h3>Cultural</h3>
+                                    <ul>
+                                        <li>Special Mention as Cult Person of the year at NCC</li>
+                                        <li>Silver in lifestyle General Championship in NCC</li>
+                                    </ul>
+                                </div>
+
+                                <div className="accolade-card full-width">
+                                    <h3>Social</h3>
+                                    <ul>
+                                        <li>Mentored 200+ students at Navodaya Vidyalaya</li>
+                                        <li>Led 30+ team turn 1000+ plastic bottle - ecobricks</li>
+                                    </ul>
+                                </div>
                             </div>
                         </section>
                     </FadeIn>
@@ -214,3 +268,4 @@ const Resume = () => {
 };
 
 export default Resume;
+
