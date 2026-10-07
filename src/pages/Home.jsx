@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import FadeIn from '../components/FadeIn';
 import ProjectCard from '../components/ProjectCard';
 import profileImage from '../assets/profile.png';
-import resumePDF from '../assets/Prashasti_Resume.pdf';
+import resumePDF from '../assets/Prashasti_resume.pdf';
 
 const Home = () => {
     const featuredProjects = [

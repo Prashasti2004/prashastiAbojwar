@@ -1,7 +1,7 @@
 import './Resume.css';
 import FadeIn from '../components/FadeIn';
 
-import resumePDF from '../assets/Prashasti_Resume.pdf';
+import resumePDF from '../assets/Prashasti_resume.pdf';
 
 const Resume = () => {
     return (
